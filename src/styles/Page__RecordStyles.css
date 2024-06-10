@@ -1,0 +1,146 @@
+.record-content { 
+    margin: 20px 10%;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 8px 3px #0c0c0c;
+    word-break: break-all;
+}
+
+.record {
+    margin: 20px;
+    font-weight: 200;
+    background-color: #292929;
+    margin: 20px 12%;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 1px 3px #202020;
+
+    display: grid;
+    grid-template-areas:  
+        'item__1 item__2 item__3 item__4 item__5';
+    grid-template-rows: auto; /* Высота строки автоматически подстраивается под содержимое */
+    grid-template-columns: auto 150px  1fr 1fr 1fr; /* Первый столбец автоматически подстраивается, второй занимает оставшуюся ширину */
+    word-break: normal;
+    gap: 10px;
+}
+
+.r_item__1 {
+    grid-area: item__1;
+    width: 230px; /* Ширина элемента фиксирована */
+    height: 400px; /* Высота элемента фиксирована */
+    object-fit: cover;
+}
+
+.r_item__1 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.r_item__2 {
+    /* text-align: start; */
+    font-size: xx-large;
+    grid-area: item__2;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex=start; 
+}
+
+.r_item__3 {
+    grid-area: item__3;
+    display: flex;
+    flex-direction: column;
+}
+
+.r_item__4 {
+    grid-area: item__4;
+    display: flex;
+    flex-direction: column;
+}
+.r_item__5{
+    padding-top: 40px;
+    grid-area: item__5;
+    height: 50%;
+}
+
+
+
+.record, .record_btns button {
+    color: #e1e3e6;
+    font-family: system-ui;
+}
+
+.record_date {
+    display: flex;
+    flex-direction: column;
+
+}
+.record_button {
+  
+    justify-self: flex-start;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 12px;
+    /* height: 100%; */
+    /* align-content: space-between; */
+    background-color: #424242;
+}
+
+.calendar { 
+        flex-grow: 1;
+}
+
+  
+  .portfolioItem input[type="radio"] {
+    display: none;
+  }
+  
+  .time-label {
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e1e3e6;
+    border-radius: 4px;
+  }
+  
+  .time-selected {
+    background-color: rgb(114, 114, 114);
+  }
+  
+  .portfolioItem.r_item__5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
+  .r_item__3 label {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .time-disabled {
+    color: #505050;
+    border: 1px solid #505050;
+    pointer-events: none;
+}
+
+
+.time-label {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* --------------------------------- */
+

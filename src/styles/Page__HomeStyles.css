@@ -1,0 +1,120 @@
+
+.home-content { 
+    margin: 20px 10%;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #363738;
+   box-shadow: 0px 0px 8px 3px #0c0c0c;
+   word-break:break-all;
+   
+}
+
+
+.post, .post__btns button {
+    color: #e1e3e6;
+    font-family:system-ui;
+}
+/* .post__btns button {display: none;} */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    background-color: #292929;
+    padding: 20px;
+    margin: 30px 12%;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 1px 3px #202020;
+  
+}
+.post__content .item__1 {
+    font-size:xx-large;
+}
+.post__content {
+    display: flex;
+    flex-direction: column;
+}
+.post__content .item__3 {
+    align-self: center;
+}
+
+.home-content h1 {
+    color: blue;
+    text-align: center;
+}
+.home-content input {
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+    height: 40px;
+    outline: 0;
+}
+
+.post-form {
+    background-color: #292929;
+    border-radius: 20px;
+    color: white;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.post-form__button {
+   
+    color: white;
+    width: 150px;
+    
+}
+
+input {
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 4px;
+    color: #e1e3e6
+}
+.text-content{
+
+    resize:vertical;
+    /* overflow: hidden; */
+    width: 90%;
+    min-height: 100px;
+    max-height: 500px;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 8px;
+    color: #e1e3e6
+}
+
+.post-form__button {
+    background-color: #4a4a4a;
+    border: none;
+    padding:  6px 12px;
+    border-radius: 4px; 
+    cursor: pointer;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.post_input-file {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.item__1 {
+    text-align: center;
+}
+
+.item__2 {
+    text-align: left;
+    max-width: 1200px;
+    padding-left: calc((100% - 1200px));
+    /* padding-right: calc((100% - 1200px)); */
+    font-size: 1.1em;
+    word-break: normal;
+    /* padding-left: calc(100% - 900px); */
+}
+
+

@@ -1,0 +1,21 @@
+.networkContainer {
+    position: fixed;
+    right: 0px;
+    top: 70vh;
+    z-index:5;
+}
+
+.networkUl li {
+    list-style: none;
+    margin: 10px;
+   cursor: pointer; 
+   font-size: 2rem;
+}
+
+.networkUl li a{
+   text-decoration: none;
+   color: grey;
+   cursor: pointer; 
+   
+}
+

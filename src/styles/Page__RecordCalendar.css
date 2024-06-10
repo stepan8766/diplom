@@ -1,0 +1,71 @@
+.calendar header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.selected {
+    background-color: rgb(114, 114, 114);
+    border-radius: 10px;
+    /* padding-left: 5px; */
+  }
+  
+  .portfolioItem input[type="radio"] {
+    display: none;
+  }
+
+.calendar header button,
+.calendar header select {
+    margin: 0 4px;
+}
+
+.calendar table {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: auto;
+}
+
+.calendar th {
+    vertical-align: middle;
+    text-align: center;
+    height: 50px;
+}
+
+.calendar .day {
+    padding: 8px 12px;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.calendar .day:hover {
+    background-color: #424242;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.calendar .day.today {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 10px;
+}
+
+.calendar .day.today:hover {
+    background-color: #424242;
+}
+
+.calendar .day.today.selected {
+    background-color: rgb(114, 114, 114);
+}
+
+.record_date {
+    text-align: center;
+}
+
+.calendar .day.disabled {
+    color: #505050;
+    pointer-events: none;
+}
+

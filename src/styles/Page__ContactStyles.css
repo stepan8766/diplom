@@ -1,0 +1,133 @@
+
+.contact-сontent {
+    display: grid;
+    grid-template-areas: 
+        'map-div map-div'
+        'address address-information'
+        'address2 address-information2'
+        ;
+        
+    grid-gap: 10px;
+    grid-template-columns: 150px calc(90% - 150px);
+    grid-template-rows: 500px 1fr;
+    word-break:break-all;
+    
+    justify-content: center;
+    margin: 20px 10%;
+    padding-bottom: 20px;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 8px 3px #0c0c0c;
+
+   
+}
+.contact__item{
+    padding: 10px;
+    
+   
+}
+
+.map-div{
+    grid-area: map-div;  
+    padding-top: 30px;
+    
+}
+
+.map {
+    border-radius: 30px;
+    border: none;
+}
+
+.address {
+    text-align: start;
+    font: inherit;
+    margin-top: 10px;
+    grid-area: address;
+    background-color: #bebebe99;
+    align-self: start;
+    color: #e1e3e6;
+    border-radius: 20px;
+}
+.address2 {
+    text-align: start;
+    font: inherit;
+    grid-area: address2;
+    margin-top: 10px;
+    background-color: #363738;
+    align-self: start;
+    color: #e1e3e6;
+    border-radius: 20px;
+   
+}
+
+
+.address-information{
+    grid-area: address-information;
+    
+}
+
+.contact-information__list{
+    list-style: none;
+}
+
+.oppening__hours{
+    padding: 5px; 
+    color: #e1e3e6;
+    background-color: #363738;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.name__studio{
+    padding: 5px; 
+    color: #e1e3e6;
+    background-color: #363738;
+    border-radius: 10px;
+}
+
+.phone__number {
+    padding: 5px; 
+    color: #e1e3e6;
+    background-color: #363738;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.address__studio {
+    padding: 5px; 
+    color: #e1e3e6;
+    background-color: #363738;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contact-information__list li i {
+    font-size: 20px;
+    width: 40px;
+}
+.address-information .contact-information__list li i {
+    color: #66fcf1
+}
+
+
+
+.address:hover, .address:focus,
+.address2:hover, .address2:focus{
+    background-color: rgba(190, 190, 190, 0.6);
+    /* color: #f0f0f0; */
+}
+
+.mapAddress2 {
+  display: none;
+
+}
+ /* .address {
+    background-color: red;
+} */
+
+
+
+
+/* background-color:  #66fcf1; */

@@ -1,0 +1,322 @@
+.portfolio {
+    margin: 20px;
+}
+.portfolio-content { 
+    margin: 20px 10%;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 8px 3px #0c0c0c;
+    word-break: break-all;
+}
+.portfolio__content {
+    display: grid;
+    grid-template-areas:  
+        'item__1  item__2  '
+        'item__1 item__3 '
+        'item__1 item__4 ';
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: 400px auto;
+    word-break: normal;
+    gap: 10px;
+}
+
+.p_item__1 {
+    grid-area: item__1;
+    max-width: 500px;
+    /* min-width: 410px; */
+    /* height: 700px; */
+    /* margin-bottom: 10px; */
+    
+}
+.p_item__1 img {
+    min-height: 700px;
+    max-height: 700px;
+    object-fit: cover;
+    
+    
+}
+.p_item__2 {
+    text-align: center;
+    font-size: xx-large;
+    grid-area: item__2;
+}
+.p_item__3 {
+    font-size: larger;
+    grid-area: item__3;
+    height: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+.p_item__4 {
+    /* width: 30%; */
+    grid-area: item__4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: end;
+    
+    
+}
+.p_item__4 img {
+    width: 33.33%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+/* ----------------------- */
+
+.portfolio, .portfolio_btns button {
+    color: #e1e3e6;
+    font-family: system-ui;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    background-color: #292929;
+    padding: 20px;
+    margin: 30px 12%;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 1px 3px #202020;
+}
+
+.p_item__1 img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input {
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 4px;
+    color: #e1e3e6;
+}
+.text-content {
+    resize: vertical;
+    width: 90%;
+    min-height: 100px;
+    max-height: 500px;
+    background-color: #4a4a4a;
+    border: none;
+    border-radius: 8px;
+    color: #e1e3e6;
+    margin-bottom: 10px;
+}
+
+.portfolio-form__button {
+    background-color: #4a4a4a;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin-top: 35px;
+}
+
+.portfolio_input-file {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.portfolio-form {
+    background-color: #292929;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.portfolio-content input {
+    width: 90%;
+    text-align: center;
+    margin: 10px;
+    height: 40px;
+    outline: 0;
+}
+
+.parent_position {
+    position: relative;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(50%);
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+/* ------------------Inputs-files--------------------------- */
+
+.input-file-row {
+    display: inline-block;
+}
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+.input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #e1e3e6;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #4a4a4a;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+    width: 200px;
+}
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.input-file-list {
+    padding: 10px 0;
+}
+.input-file-list-item {
+    display: inline-block;
+    margin: 0 15px 15px;
+    width: 150px;
+    vertical-align: top;
+    position: relative;
+}
+.input-file-list-item img {
+    width: 150px;
+}
+.input-file-list-name {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.input-file-list-remove {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 5px;
+    right: 5px;
+    background: #ff0202;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1800px) {   
+    .portfolio__content {
+        grid-template-areas:  
+        'item__1  item__2  '
+        'item__1 item__3 '
+        'item__4 item__4 ';
+    }
+    .p_item__4{
+         justify-content: start;
+    }
+    .p_item__4 img {
+        width: 33.33%;
+        /* height: 250px; */
+        object-fit:cover;
+        
+    }
+}
+
+@media screen and (max-width:1200px) {   
+    .portfolio__content {
+        grid-template-areas:  
+        'item__2 item__2 '
+        'item__1 item__1'
+        'item__4 item__4'
+        'item__3 item__3'
+    }
+    .p_item__4{
+         justify-content: start;
+    }
+    .p_item__4 img {
+        width: 33.33%;
+        /* height: 250px; */
+        object-fit:cover;
+    }
+    .p_item__1{
+        justify-self: center;
+        width: 400px;
+        /* height: 600px; */
+    }
+    .p_item__1{
+       margin-top: 0px;
+       padding-top: 0px;
+    }
+}
+
+
+/*------------------------------SLIDER-------------------------*/
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-40%);
+    font-size: 250%;
+    color: #4a4a4a;
+    border: none;
+    cursor: pointer;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    transition: color 0.1s ease; 
+    z-index: 11;
+  }
+  
+  .arrow-left:active,
+  .arrow-right:active {
+    color: #e1e3e6;
+  }
+

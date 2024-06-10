@@ -1,0 +1,110 @@
+.price-content { 
+    margin: 20px 12%;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid #363738;
+    box-shadow: 0px 0px 8px 3px #0c0c0c;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-title {
+    color: #e1e3e6;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.price-container {
+    margin: 12%;
+    margin-top: 5%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(10, 150px);
+    grid-template-rows: repeat(6, 300px);
+    justify-content: center;
+    grid-template-areas: 
+        "p1 p1 p1 p1 p1 p1 p1 p1 p1 p1"
+        ". . p2 p2 p3 p3 p3 p3 . ."
+        ". . p4 p4 p5 p5 p6 p6 . ."
+        ". . p4 p4 p7 p7 p8 p8 . ."
+        ". . p9 p9 p9 p10 p10 p10 . ."
+        ". . p11 p11 p12 p12 p12 p12 . .";
+}
+
+.price-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+}
+.price_item:not(.price-item__1) {
+    transition: transform 0.3s, gap 0.3s;
+}
+
+.price_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.price_item:hover:not(.price-item__1) {
+    gap: 0;
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* .price_item:hover img {
+} */
+
+.price_item .info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.5);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    color: #e1e3e6;
+    text-align: start;
+    padding: 10px;
+    box-sizing: border-box;
+    transition:bottom 0.2s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    letter-spacing: 0.8px;
+    word-break: normal;
+}
+
+.price_item:hover .info {
+    bottom: 0;
+    
+}
+.price_item .item-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.2);
+    color: #e1e3e6;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition:bottom 0.2s;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+}
+
+
+.price-item__1 { grid-area: p1; }
+.price-item__2 { grid-area: p2; }
+.price-item__3 { grid-area: p3; }
+.price-item__4 { grid-area: p4; }
+.price-item__5 { grid-area: p5; }
+.price-item__6 { grid-area: p6; }
+.price-item__7 { grid-area: p7; }
+.price-item__8 { grid-area: p8; }
+.price-item__9 { grid-area: p9; }
+.price-item__10 { grid-area: p10; }
+.price-item__11 { grid-area: p11; }
+.price-item__12 { grid-area: p12; }

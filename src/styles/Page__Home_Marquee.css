@@ -1,0 +1,66 @@
+.marquee {
+    width: 76%;
+    overflow: hidden;
+    margin: 10px 12%;
+    box-sizing: border-box;
+    white-space: nowrap;
+    /* z-index: 0; */
+  }
+  
+  .marquee__inner {
+    display: flex;
+    width: fit-content;
+    animation: marquee 30s linear infinite;
+    
+  }
+  
+  /* .marquee__inner span {
+    /* width: 21%; 
+    /* margin: 2%; 
+  } */
+  .marquee__item {
+    padding: 10px;
+    flex: 1 1 300px;
+  }
+  
+  .marquee__item img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover; 
+     
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+/* Медиазапросы для адаптивного отображения */
+/* @media (max-width: 1200px) {
+  .marquee__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .marquee__item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .marquee__item {
+    width: 100%;
+  }
+} */
+
+
